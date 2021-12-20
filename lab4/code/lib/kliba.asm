@@ -64,7 +64,7 @@ disp_str:
 ;                  void disp_color_str(char * info, int color);
 ; ========================================================================
 disp_color_str:
-	push	ebp
+	push ebp
 	mov	ebp, esp
 
 	mov	esi, [ebp + 8]	; pszInfo

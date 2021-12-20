@@ -343,7 +343,9 @@ sys_call:
 
         sti
 
+		push	ebx
         call    [sys_call_table + eax * 4]
+		add 	esp,4
         mov     [esi + EAXREG - P_STACKBASE], eax
 
         cli
